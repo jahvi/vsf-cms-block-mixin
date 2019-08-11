@@ -1,0 +1,11 @@
+{
+  "name": "vsf-cms-block-mixin",
+  "description": "Vue Storefront mixin to parse CMS blocks content as HTML elements",
+  "version": "1.0.0",
+  "repository": "git@github.com:jahvi/vsf-cms-block-mixin.git",
+  "author": "Javier Villanueva <javiervd@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-html-parser": "^1.1.16"
+  }
+}
