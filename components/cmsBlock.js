@@ -16,7 +16,7 @@ export default {
   serverPrefetch() {
     return this.fetchBlock();
   },
-  created() {
+  mounted() {
     if (!this.data) {
       return this.fetchBlock();
     }
@@ -37,7 +37,8 @@ export default {
       if (queryKey && queryValue) {
         return this.$store.dispatch('cmsBlock/single', {
           key: queryKey,
-          value: queryValue
+          value: queryValue,
+          skipCache: true
         })
       }
     }
